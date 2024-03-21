@@ -7,16 +7,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    overflow-x: hidden;
-
+html, body {
+    position:relative;
+    overflow-x:hidden;
 }
 body {
     min-height: 100vh;
     background: url(./background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 ul {
     list-style: none;
@@ -78,6 +78,7 @@ header {
     border-bottom: 0px solid transparent;
     transition: .5s;
     font-size: 16px;
+
     
     
 } 
@@ -97,7 +98,7 @@ header {
 .btnLogin-popup {
     background: transparent;
     width: 140px;
-    height: 40px;
+    /* height: 40px; */
     border: 1.5px solid #fff;
     outline: none;
     border-radius: 6px;
@@ -106,17 +107,17 @@ header {
     color: #fff;
     font-weight: 400;
     transition: .5s;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .nav .btnLogin-popup:hover {
     background-color: #fff;
     color: #162938;
 } 
 
-@media (max-width: 700px) {
-    .header {
+@media (max-width: 900px) {
+    /* .header {
         position: relative;
-    }
+    } */
     .nav-container .logo {
         font-size: 1.2rem;
         z-index: 2;
@@ -157,15 +158,12 @@ header {
         text-align: center;
         align-items: center;
     }
-
     .nav.active {
         right: 0;
     }
     .btnLogin-popup {
         margin: 0;
     }
-     
-
 }
 
 
@@ -346,5 +344,3 @@ click -- login -> change it to register remove active class
 .login-register a:hover {
     text-decoration: underline;
 }
-
-
